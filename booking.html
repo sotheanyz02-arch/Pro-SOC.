@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Tickets | Eventora</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <nav class="navbar">
+    <a class="logo" href="index.html">EVENT<span>ORA.</span></a>
+    <a class="nav-back" href="index.html">← Explore Events</a>
+  </nav>
+
+  <main class="booking-layout container">
+    <div class="booking-intro">
+      <span class="tag">YOUR NEXT EXPERIENCE</span>
+      <h1>Make it<br><span>happen.</span></h1>
+      <p>Complete your booking information and get ready for an amazing experience.</p>
+      <div class="booking-note">
+        <span>✦</span>
+        <div>
+          <strong>Simple & easy booking</strong>
+          <p>Choose your ticket and review the total before confirming.</p>
+        </div>
+      </div>
+    </div>
+
+    <form class="form-card booking-card" id="bookingForm">
+      <h2>Booking Details</h2>
+      <p class="muted">Please complete all required fields.</p>
+
+      <label for="bookingName">Full Name</label>
+      <input id="bookingName" type="text" required>
+
+      <label for="bookingEmail">Email Address</label>
+      <input id="bookingEmail" type="email" required>
+
+      <label for="bookingPhone">Phone Number</label>
+      <input id="bookingPhone" type="tel" required>
+
+      <label for="selectedEvent">Choose Event</label>
+      <select id="selectedEvent" required></select>
+
+      <label for="ticketType">Ticket Type</label>
+      <select id="ticketType">
+        <option value="Standard">Standard Ticket</option>
+        <option value="VIP">VIP Ticket (+80%)</option>
+      </select>
+
+      <label for="ticketQuantity">Number of Tickets</label>
+      <input id="ticketQuantity" type="number" min="1" max="10" value="1" required>
+
+      <label for="specialRequest">Special Request (Optional)</label>
+      <textarea id="specialRequest" rows="3"
+                placeholder="Anything we should know?"></textarea>
+
+      <div class="price-summary">
+        <div><span>Price per ticket</span><strong id="unitPrice">$0.00</strong></div>
+        <div class="total-row"><span>Total Price</span><strong id="totalPrice">$0.00</strong></div>
+      </div>
+
+      <button class="btn btn-primary full-width" type="submit">
+        Confirm Booking ↗
+      </button>
+      <p id="bookingMessage" class="message" aria-live="polite"></p>
+      <p class="form-note">No real payment is processed in this demo.</p>
+    </form>
+  </main>
+</body>
+</html>
+

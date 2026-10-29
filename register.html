@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register | Eventora</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <nav class="navbar">
+    <a class="logo" href="index.html">EVENT<span>ORA.</span></a>
+    <a class="nav-back" href="index.html">← Back to Home</a>
+  </nav>
+
+  <main class="form-page">
+    <form class="form-card" id="registerForm">
+      <span class="tag">BECOME A MEMBER</span>
+      <h1>Create your account.</h1>
+      <p class="muted">Register before booking your favorite events.</p>
+
+      <label for="fullName">Full Name</label>
+      <input id="fullName" type="text" placeholder="Enter your full name" required>
+
+      <label for="registerEmail">Email Address</label>
+      <input id="registerEmail" type="email" placeholder="you@example.com" required>
+
+      <label for="registerPhone">Phone Number</label>
+      <input id="registerPhone" type="tel" placeholder="Enter your phone number" required>
+
+      <label for="registerPassword">Password</label>
+      <input id="registerPassword" type="password"
+             minlength="6" placeholder="At least 6 characters" required>
+
+      <button class="btn btn-primary full-width" type="submit">
+        Create Account ↗
+      </button>
+
+      <p id="registerMessage" class="message" aria-live="polite"></p>
+      <p class="form-note">
+        Demo registration only. Use a fictional password for testing.
+      </p>
+    </form>
+  </main>
+</body>
+</html>
+
